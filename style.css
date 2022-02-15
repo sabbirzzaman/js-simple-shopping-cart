@@ -36,7 +36,7 @@ h2 {
   margin-bottom: 30px;
 }
 
-h3 {
+h3, .p-price {
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -71,7 +71,7 @@ button:hover {
 }
 
 .header-container {
-  height: 60px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,6 +114,7 @@ button:hover {
 
 .product-img {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .pricing {
