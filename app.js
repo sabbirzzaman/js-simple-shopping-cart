@@ -6,12 +6,10 @@ const cartProducts = document.getElementById('cart-products');
 
 cartOpenBtn.addEventListener('click', function () {
   cartSlider.classList.add('slider-open');
-  document.body.classList.add('no-scroll');
 });
 
 cartCloseBtn.addEventListener('click', function () {
   cartSlider.classList.remove('slider-open');
-  document.body.classList.remove('no-scroll');
 });
 
 allProduct.addEventListener('click', function (event) {
@@ -21,7 +19,6 @@ allProduct.addEventListener('click', function (event) {
 
   const productImageTag = event.target.parentElement.parentElement.parentElement.firstElementChild.firstElementChild;
   const productImageSrc = productImageTag.getAttribute("src");
-  console.log(productImageSrc)
 
 
   if (event.target.matches('button')) {
