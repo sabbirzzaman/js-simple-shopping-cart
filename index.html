@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Shopping Cart</title>
+    <script
+      src="https://kit.fontawesome.com/bf6b0e25fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">IG Gear</div>
+        <div class="cart">
+          <i id="cart-open-btn" class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+    </header>
+
+    <div id="cart-slider" class="cart-slide">
+      <div class="cart-main">
+        <div class="cart-heading">
+          <h3 class="cart-title">My Cart</h3>
+          <i id="cart-close-btn" class="fa-solid fa-xmark"></i>
+        </div>
+        <div id="cart-products">
+          <div class="cart-item">
+            <div class="cart-product">
+              <div class="cart-arrow">
+                <i class="fa-solid fa-angle-up"></i>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+
+              <img src="./images/action.png" alt="" />
+
+              <div class="cart-details">
+                <h4>Action Camera</h4>
+                <p>$599</p>
+              </div>
+            </div>
+
+            <div class="cart-quantity">
+              <span id="quantity">1</span>
+              <button class="remove-product">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-total">
+        <div class="sub-total">
+          <h4>Sub Total</h4>
+          <h4>$599</h4>
+        </div>
+        <div class="charge">
+          <h4>Shipping</h4>
+          <h4>$10</h4>
+        </div>
+        <div class="total">
+          <h4>Total</h4>
+          <h4>$609</h4>
+        </div>
+      </div>
+    </div>
+
+    <section class="product">
+      <div class="container product-container">
+        <div class="product-heading">
+          <h2>Grab Your Gear!</h2>
+        </div>
+
+        <div id="all-product" class="products">
+          <div class="item">
+            <div class="product-img">
+              <img src="./images/action.png" alt="" />
+            </div>
+            <div class="product-details">
+              <h3>Action Camera</h3>
+              <div class="pricing">
+                <h3>$599</h3>
+                <button class="product-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="product-img">
+              <img src="./images/airpod.png" alt="" />
+            </div>
+            <div class="product-details">
+              <h3>Apple AirPod</h3>
+              <div class="pricing">
+                <h3>$299</h3>
+                <button class="product-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="product-img">
+              <img src="./images/camera.png" alt="" />
+            </div>
+            <div class="product-details">
+              <h3>Camera</h3>
+              <div class="pricing">
+                <h3>$1199</h3>
+                <button class="product-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="product-img">
+              <img src="./images/drone.png" alt="" />
+            </div>
+            <div class="product-details">
+              <h3>Drone Camera</h3>
+              <div class="pricing">
+                <h3>$759</h3>
+                <button class="product-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="product-img">
+              <img src="./images/setup.png" alt="" />
+            </div>
+            <div class="product-details">
+              <h3>Lighting Setup</h3>
+              <div class="pricing">
+                <h3>$299</h3>
+                <button class="product-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="product-img">
+              <img src="./images/tripod.png" alt="" />
+            </div>
+            <div class="product-details">
+              <h3>Tripod</h3>
+              <div class="pricing">
+                <h3>$89</h3>
+                <button class="product-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
