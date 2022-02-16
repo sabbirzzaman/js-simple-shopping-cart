@@ -14,10 +14,11 @@ cartCloseBtn.addEventListener('click', function () {
 
 allProduct.addEventListener('click', function (event) {
   // Get product text, pricing, image
+  const parentProduct = event.target.parentElement.parentElement.parentElement;
   const productTitle = event.target.parentElement.parentElement.firstElementChild;
   const productPrice = event.target.parentElement.firstElementChild;
 
-  const productImageTag = event.target.parentElement.parentElement.parentElement.firstElementChild.firstElementChild;
+  const productImageTag = parentProduct.firstElementChild.firstElementChild;
   const productImageSrc = productImageTag.getAttribute("src");
 
 
